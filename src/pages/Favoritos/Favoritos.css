@@ -1,0 +1,14 @@
+.favoritos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px;
+  padding: 35px;
+}
+  
+.favoritos-container h2{
+  display: flex;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--bg-color);
+}

@@ -1,0 +1,50 @@
+.electronica-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 352px;
+  margin: 4%;
+  gap: 100px;
+  border-radius: 10px;
+  place-items: center;
+}
+
+.electronica-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: grey;
+    cursor: pointer;
+    animation: popIn 1s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+@media (max-width: 1100px) {
+    .electronica-container {
+        margin: 10%;
+    }
+  }
+
+@media (max-width: 800px) {
+    .electronica-container {
+        margin: 12%;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .electronica-container {
+        margin: 14%;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .electronica-container {
+        margin: 15%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .electronica-container {
+        margin: 16%;
+    }
+  }

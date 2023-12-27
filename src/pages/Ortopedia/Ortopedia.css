@@ -1,0 +1,201 @@
+.ortopedia-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 352px;
+    margin: 4%;
+    gap: 100px;
+    border-radius: 10px;
+    place-items: center;
+}
+
+.ortopedia-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: popIn 1s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border-radius: 10px;
+    height: 415px;
+    width: 320px;
+    box-shadow: 0 5px 25px rgba(0,0,0,1);
+}
+
+.info-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    margin: 0px 8px;
+    gap: 10px;
+}
+
+.info-detail p {
+    font-size: 1.8rem;
+}
+
+.info-detail h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.titulo-main h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 135px;
+    color: white;
+    font-size: 50px;
+}
+
+.product-info h3, p {
+    color: white;
+}
+
+.info-detail button {
+   margin-left: 20%;
+}
+
+.detail_container {
+    position: fixed;
+    z-index: 15;
+    align-items: center;
+    width: 750px;
+    background: rgba(117, 78, 249, 0.82);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.4px);
+    -webkit-backdrop-filter: blur(15.4px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.4px);
+    margin-bottom: 280px;
+    box-shadow: 0 5px 25px rgba(0,0,0,1);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.detail_container img{
+    width: 275px;
+    height: 275px;
+    border-radius: 14px;
+    cursor: default;
+}
+
+.detail_contant {
+    max-width: 100%;
+    gap: 12px;
+}
+
+.detail_info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.product_detail {
+    margin-left: 30px;
+}
+
+.product_detail h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.product_detail h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.product_detail span {
+    font-size: 1.4rem;
+}
+
+.product_detail p {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.fa-circle-xmark {
+    font-size: 2.5rem;
+    color: rgba(95, 0, 79, 0.76);
+    cursor: pointer;
+}
+
+.hidden-btn {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .ortopedia-container {
+        margin: 10%;
+    }
+  }
+
+@media (max-width: 800px) {
+    .ortopedia-container {
+        margin: 12%;
+    }
+    .detail_info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail_container {
+        width: 450px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .ortopedia-container {
+        margin: 14%;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .ortopedia-container {
+        margin: 15%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .ortopedia-container {
+        margin: 16%;
+    }
+  }
+
+@media (min-width: 350px) {
+    .detail_container {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

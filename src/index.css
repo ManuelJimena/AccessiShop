@@ -1,0 +1,52 @@
+:root {
+  --primary: aliceblue;
+  --secondary: #ba382f;
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #754ef9;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --rhythm: .75rem;
+  --card-ratio: .627;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(to right, #754ef9, #ba382f);
+}
+
+a {
+  color: var(--primary);
+}
+
+main {
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+*::selection {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+h3 {
+  color: var(--bg-color);
+}

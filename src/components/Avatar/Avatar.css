@@ -1,0 +1,85 @@
+.avatar-user img {
+    height: 35px;
+    width: 35px;
+    margin-left: 17px;
+    border-radius: 50%;
+  }
+
+.menu-container {
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    margin-right: 5%;
+    width: 200px;
+    min-height: 100px;
+    background-color: var(--main-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: 1;
+    cursor: default;
+ }
+
+ .menu-container::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 35px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    transform: rotate(45deg);
+ }
+
+.menu-option-usuario, .menu-option-perfil, .menu-option-salir, .menu-option-favoritos {
+    transition: background-color 0.3s;
+    padding: 15px;
+    border: 1px solid var(--bg-color);
+}
+
+.menu-option-usuario {
+    color: var(--bg-color);
+   
+}
+
+.menu-option-perfil span, .menu-option-favoritos span {
+    margin-left: 65px;
+    font-size: 1.2rem;
+    color: var(--bg-color);
+}
+.menu-option-favoritos i {
+    font-size: 2.1rem;
+    color: var(--bg-color);
+}
+
+.menu-option-perfil i, .menu-option-favoritos i {
+    margin-left: 20px;
+}
+
+.menu-option-perfil:hover, .menu-option-salir:hover, .menu-option-favoritos:hover {
+    background-color: var(--secondary);
+}
+
+.menu-option-salir span {
+    color: var(--bg-color);
+    margin-left: 43px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+    .menu-container {
+        margin-right: 1%;
+     }
+    
+     .menu-container::before {
+        right: 25px;
+     }
+  }
+
+  @media (max-width: 805px) {
+    .menu-container {
+        margin-right: -80%;
+     }
+     .avatar-user img {
+        margin-top: 6px;
+      }
+  }

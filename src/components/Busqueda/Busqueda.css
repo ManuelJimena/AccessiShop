@@ -1,0 +1,26 @@
+.busqueda {
+    position: absolute;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    background-color: var(--white-color);
+    display: none;
+    text-shadow: -1px -1px 0 var(--bg-color),
+    1px -1px 0 var(--bg-color), -1px 1px 0 var(--bg-color),
+    1px 1px 0 var(--bg-color);
+    cursor: pointer;
+    margin-bottom: 7px;
+    margin-left: 40px;
+
+}
+
+.fa-search {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+ 
+ 
+ @media (max-width: 780px) {
+  .busqueda {
+    display: block;
+  }
+}

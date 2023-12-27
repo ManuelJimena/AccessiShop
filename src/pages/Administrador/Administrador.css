@@ -1,0 +1,54 @@
+.administrador {
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 50px 0px;
+  
+}
+.administrador-productos {
+  width: 400px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 70px;
+}
+
+.administrador-productos label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+
+.administrador input, select, .subir {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #312f2f;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.administrador select {
+    appearance: none;
+}
+  
+.administrador .subir {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.administrador .subir:hover {
+    background-color: #ba382f;
+}
+
+.administrador h2{
+    
+
+    font-size: 20px;
+}

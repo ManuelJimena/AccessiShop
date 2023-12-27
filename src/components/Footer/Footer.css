@@ -1,0 +1,18 @@
+.footer {
+    height: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: var(--text-color);
+}
+  
+.footer-container h2{
+    display: flex;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--bg-color);
+}

@@ -1,0 +1,261 @@
+.form-credit {
+  min-height: 100vh;
+    padding: 120px 0px;
+}
+  
+.form-credit input {
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .form-credit button {
+    appearance: none;
+    padding: 14px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    border: none;
+    font-weight: bold;
+    transition: all .3s;
+    font-variant: small-caps;
+    letter-spacing: .02em;
+    margin: 140px 0px 120px 0px;
+    text-transform: uppercase;
+  }
+  
+  .form-credit button:hover {
+    background-position: 0 100%;
+    transform: scale(1.05);
+  }
+  
+
+  .card__container {
+    margin: 1vh auto;
+    transform: translateY(0.1%);
+    padding: 0 var(--rhythm);
+    max-width: 600px;
+    perspective: 1000px;
+}
+
+  .card__container h2{
+    color: var(--bg-color);
+    margin: 60px 0px;
+    font-size: 3rem;
+  }
+
+  .card__container p {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: -10px;
+  }
+  
+  .card {
+    position: relative;
+    padding-top: calc(var(--card-ratio) * 100%);
+    height: 0;
+    background: url('https://res.cloudinary.com/dhjmt9vvq/image/upload/v1703198073/AccessiSolutions/AccessiBANK_ejedp4.webp');
+    font: 1rem/1 "PT Mono", serif;
+    transform: rotateY(20deg);
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    background-size: cover;
+  }
+  
+  .card .field,
+  .card .card-type {
+    position: absolute;
+  }
+
+  .card-type__logo.mastercard {
+    background-image: url(https://res.cloudinary.com/dhjmt9vvq/image/upload/v1703198073/AccessiSolutions/Mastercard-logo_fnpo4z.webp);
+  }
+  
+  .field {
+    padding: calc(var(--rhythm) * 2.5) var(--rhythm) var(--rhythm);
+    margin-top: calc(var(--rhythm) * -2.5);
+  }
+  
+  .field input {
+    -webkit-text-fill-color: rgba(213, 225, 224, .5);
+    text-shadow: 0px 0 1px rgba(255, 255, 255, .4), 0 0px 1px rgba(255, 255, 255, .6),
+      2px 0 1px rgba(0, 0, 0, .4), 0 2px 1px rgba(0, 0, 0, .9);
+    text-transform: uppercase;
+  }
+  
+  .field input:hover + label,
+  .field input:focus + label {
+    &::before,
+    &::after {
+      transform: translateZ(65px);
+      border-color: var(--background);
+    }
+  }
+  
+  .field input.touched:invalid + label {
+    &::before,
+    &::after {
+      border-color: var(--secondary);
+    }
+  }
+  
+  .field label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--rhythm);
+    cursor: text;
+    pointer-events: none;
+  }
+  
+  .field label::before,
+  .field label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid var(--bg-color);
+    transform: translateZ(60px);
+    transition: all .3s;
+  }
+  
+  .card-num {
+    top: 50%;
+    left: 3%;
+    width: 94%;
+    font-size: 2.75rem;
+  }
+
+  
+  @media only screen and (max-width: 36em) {
+    .card-num {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media only screen and (max-width: 31em) {
+    .card-num {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .name {
+    left: 3%;
+    bottom: 3%;
+    font-size: 1.5rem;
+    width: 47%;
+  }
+  
+
+  @media only screen and (max-width: 31em) {
+    .name {
+      font-size: 1rem;
+    }
+  }
+  
+  .expiration {
+    left: 53%;
+    bottom: calc(3% + .5rem);
+    width: var(--rhythm * 8);
+  }
+  
+  .card-type {
+    bottom: 3%;
+    right: 3%;
+    width: 20%;
+  }
+  
+  .card-type input {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: -99;
+  }
+  
+  .card-type__logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    background: transparent center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    font-size: 0;
+  }
+  
+  .card-type__logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(30px);
+    transition: all .3s;
+  }
+  
+  .card-type__logo:hover::before {
+    border-color: var(--background);
+    transform: translateZ(35px);
+  }
+  
+  .csv {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    margin-top: 25px;
+    font-size: 1.5rem;
+  }
+  
+  .csv input {
+    text-shadow: none;
+    -webkit-text-fill-color: inherit;
+    transform: skewX(8deg);
+    text-align: right;
+    color: lighten(var(--text-color), 10%);
+    transform: rotateY(-4deg);
+  }
+  
+  .submit {
+    clear: both;
+    text-align: center;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #d8e5e4;
+  }
+  
+  
+  @media (max-width: 590px) {
+    .card-type__logo.mastercard {
+        width: 50px;
+      }
+
+
+      .card__container p {
+        font-size: 1rem;
+      }
+
+  }
+  
+  @media (max-width: 460px) {
+    .card-type__logo.mastercard {
+       display: none;
+      }
+  }
+  
