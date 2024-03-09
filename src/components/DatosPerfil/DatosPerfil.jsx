@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '@/context/userContext';
 import { API } from '../../API/API';
 import Swal from 'sweetalert2';
 import './DatosPerfil.css';

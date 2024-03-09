@@ -1,5 +1,5 @@
 import { useEffect, useContext } from 'react';
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "@/context/CartContext";
 import Swal from 'sweetalert2';
 import "./Payments.css";
 

@@ -1,5 +1,5 @@
 import { useState, useContext, useRef } from 'react';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '@/context/userContext';
 import "./LoginMenu.css";
 import Swal from 'sweetalert2';
 

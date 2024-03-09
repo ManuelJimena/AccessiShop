@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import GalleryMovilidad from "../../components/GalleryMovilidad/GalleryMovilidad";
+import GalleryMovilidad from "@components/GalleryMovilidad/GalleryMovilidad";
 import axios from "axios";
-import Search from "../../components/Search/Search";
+import Search from "@components/Search/Search";
 import "./Movilidad.css";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "@components/Spinner/Spinner";
 
 const Movilidad = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);

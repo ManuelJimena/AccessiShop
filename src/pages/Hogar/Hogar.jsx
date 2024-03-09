@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import GalleryHogar from "../../components/GalleryHogar/GalleryHogar";
+import GalleryHogar from "@components/GalleryHogar/GalleryHogar";
 import axios from "axios";
-import Search from "../../components/Search/Search";
+import Search from "@components/Search/Search";
 import "./Hogar.css";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "@components/Spinner/Spinner";
 
 const Hogar = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import GalleryElectrónica from "../../components/GalleryElectrónica/GalleryElectrónica";
+import GalleryElectrónica from "@components/GalleryElectrónica/GalleryElectrónica";
 import axios from "axios";
-import Search from "../../components/Search/Search";
+import Search from "@components/Search/Search";
 import "./Electrónica.css";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "@components/Spinner/Spinner";
 
 const Electrónica = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);

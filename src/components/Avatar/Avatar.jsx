@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '@/context/userContext';
 import LogOut from "../LogOut/LogOut";
 import "./Avatar.css";
 

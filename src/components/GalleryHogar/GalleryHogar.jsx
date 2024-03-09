@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import ShopBtn from "../ShopBtn/ShopBtn";
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "@/context/CartContext";
 
 const GalleryHogar = ({ filteredProducts }) => {
     const [selectedProduct, setSelectedProduct] = useState(null);

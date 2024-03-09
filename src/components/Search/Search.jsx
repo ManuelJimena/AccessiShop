@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useSearchContext } from '../../context/searchContext';
+import { useSearchContext } from '@/context/searchContext';
 import './Search.css';
 
 const Search = ({ onSearch }) => {

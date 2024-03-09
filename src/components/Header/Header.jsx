@@ -1,9 +1,9 @@
 import "./Header.css";
 import { useEffect, useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { UserContext } from '../../context/userContext';
-import { useSearchContext } from "../../context/searchContext";
-import LoginMenu from "../../components/LoginMenu/LoginMenu";
+import { UserContext } from '@/context/userContext';
+import { useSearchContext } from "@/context/searchContext";
+import LoginMenu from "@components/LoginMenu/LoginMenu";
 import CartComponent from "../CartComponent/CartComponent";
 import Avatar from "../Avatar/Avatar";
 

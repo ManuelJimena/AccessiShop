@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import GalleryOrtopedia from "../../components/GalleryOrtopedia/GalleryOrtopedia";
+import GalleryOrtopedia from "@components/GalleryOrtopedia/GalleryOrtopedia";
 import axios from "axios";
-import Search from "../../components/Search/Search";
+import Search from "@components/Search/Search";
 import "./Ortopedia.css";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "@components/Spinner/Spinner";
 
 const Ortopedia = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);

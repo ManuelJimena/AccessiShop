@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '@/context/CartContext';
 import './ShopBtn.css';
 
 const ShopBtn = ({ product }) => {

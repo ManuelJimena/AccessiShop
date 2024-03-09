@@ -1,8 +1,8 @@
 import './Perfil.css';
 import { useContext, useState } from 'react';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '@/context/userContext';
 import { Link } from 'react-router-dom';
-import DatosPerfil from '../../components/DatosPerfil/DatosPerfil';
+import DatosPerfil from '@components/DatosPerfil/DatosPerfil';
 
 const Perfil = () => {
   const { user } = useContext(UserContext);

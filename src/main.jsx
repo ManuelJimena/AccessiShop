@@ -1,20 +1,20 @@
-import './index.css';
+import '@/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from './App.jsx';
+import App from '@/App.jsx';
 import { UserContextProvider } from './context/userContext.jsx';
-import IsAuth from './components/IsAuth/IsAuth';
-import Electrónica from './pages/Electrónica/Electrónica';
-import Hogar from './pages/Hogar/Hogar';
-import Inicio from './pages/Inicio/Inicio';
-import Movilidad from './pages/Movilidad/Movilidad';
-import NotFound from './pages/NotFound/NotFound';
-import Administrador from './pages/Administrador/Administrador';
-import Ortopedia from './pages/Ortopedia/Ortopedia';
-import Perfil from './pages/Perfil/Perfil';
-import Payments from './pages/Payments/Payments';
-import Favoritos from './pages/Favoritos/Favoritos.jsx';
+import IsAuth from '@components/IsAuth/IsAuth';
+import Electrónica from '@/pages/Electrónica/Electrónica';
+import Hogar from '@/pages/Hogar/Hogar';
+import Inicio from '@/pages/Inicio/Inicio';
+import Movilidad from '@/pages/Movilidad/Movilidad';
+import NotFound from '@/pages/NotFound/NotFound';
+import Administrador from '@/pages/Administrador/Administrador';
+import Ortopedia from '@/pages/Ortopedia/Ortopedia';
+import Perfil from '@/pages/Perfil/Perfil';
+import Payments from '@/pages/Payments/Payments';
+import Favoritos from '@/pages/Favoritos/Favoritos.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

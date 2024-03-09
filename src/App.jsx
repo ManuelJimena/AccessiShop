@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { CartProvider } from './context/CartContext';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import AccessibilityButton from './components/AccessibilityButton/AccessibilityButton';
+import { CartProvider } from '@/context/CartContext';
+import Header from '@components/Header/Header';
+import Footer from '@components/Footer/Footer';
+import AccessibilityButton from '@components/AccessibilityButton/AccessibilityButton';
 import { Outlet, useLocation } from 'react-router-dom';
-import { SearchProvider } from './context/searchContext';
+import { SearchProvider } from '@/context/searchContext';
 
 
 const App = () => {
