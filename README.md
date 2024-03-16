@@ -1,7 +1,7 @@
 # AccessiShop
 
- # PROYECTO FINAL REACT ( Rock(theCode) - Full Stack)
-## Desafío: Desarrollo de aplicación web con frontend y backend.
+ # PROYECTO FINAL Rock(theCode)
+## Desafío: Desarrollo de aplicación web Full Stack.
 ## Build: https://accessi-shop.vercel.app/
 ## Video de presentación del proyecto: -------
 ## Características:
