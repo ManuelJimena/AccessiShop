@@ -1,0 +1,86 @@
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.contacto {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contacto form label {
+    display: block;
+    color: var(--bg-color);
+    margin-bottom: 5px;
+}
+
+.contacto form input[type="text"],
+.contacto form input[type="email"],
+.contacto form textarea,
+.contacto form input[type="submit"] {
+    width: 420px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contacto form input[type="text"]:focus,
+.contacto form input[type="email"]:focus,
+.contacto form textarea:focus {
+    border-color: var(--secondary);
+    outline: none;
+}
+
+.contacto form input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contacto form input[type="submit"]:hover {
+    background-color: darken(var(--secondary), 10%);
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        width: 90%;
+    }
+
+    .contacto form input[type="text"],
+    .contacto form input[type="email"],
+    .contacto form textarea,
+    .contacto form input[type="submit"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto form label {
+        font-size: 16px;
+    }
+
+    .contacto form input,
+    .contacto form textarea {
+        font-size: 14px;
+    }
+}
+
