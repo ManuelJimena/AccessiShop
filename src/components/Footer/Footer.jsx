@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="modal politica-modal">
               <div className="modal-contenido politica-modal-contenido">
                 <p>
-                  Bienvenido a AccessiShop. Al utilizar este sitio web, aceptas cumplir con estos términos y condiciones de uso. Si no estás de acuerdo con alguna parte de estos términos, por favor, abstente de utilizar nuestro sitio. El contenido, diseño y logotipos del sitio web son propiedad de AccessiShop. Queda prohibida la reproducción no autorizada.
+                 Bienvenido a AccessiShop. Al utilizar este sitio web, aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo, por favor, abstente de usarlo. El contenido, diseño y logotipos del sitio son propiedad de AccessiShop y su reproducción no autorizada está prohibida.
                 </p>
                 <button onClick={toggleCondiciones}>Cerrar</button>
               </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="modal privacidad-modal">
               <div className="modal-contenido privacidad-modal-contenido">
                 <p>
-                  El presente Política de Privacidad establece los términos en que AccessiShop usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web.
+                  En AccessiShop, recogemos y protegemos tu información personal, como nombre y correo electrónico, para mejorar tu experiencia en nuestra tienda de ortopedia. Utilizamos estos datos para ofrecerte mejores productos y promociones, y no los compartiremos con terceros sin tu consentimiento, salvo por requerimiento legal. Puedes controlar el uso de tus datos contactándonos en cualquier momento. Gracias por confiar en AccessiShop.
                 </p>
                 <button onClick={togglePrivacidad}>Cerrar</button>
               </div>
@@ -81,9 +81,9 @@ const Footer = () => {
           {mostrarCookies && (
             <div className="modal cookies-modal">
               <div className="modal-contenido cookies-modal-contenido">
-                <p>
-                  Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web.
-                </p>
+              <p>
+                Este sitio web utiliza cookies para mejorar tu experiencia de navegación y proporcionarte servicios más personalizados. Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio. Nos ayudan a recordar tus preferencias, entender cómo utilizas nuestro sitio y mejorar aspectos de nuestro servicio. Al continuar utilizando nuestro sitio, aceptas el uso de cookies. Para obtener más información, consulta nuestra Política de Privacidad.
+              </p>
                 <button onClick={toggleCookies}>Cerrar</button>
               </div>
             </div>
